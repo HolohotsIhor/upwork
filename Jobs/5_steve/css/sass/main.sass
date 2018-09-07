@@ -1,0 +1,90 @@
+@import "bourbon/bourbon"
+/* *********** Header ********** */
+body
+	font-family: "AvenirLTLight", Helvetica, OpenSansRegular
+	font-size: 14px
+
+header
+	background-color: rgba(242, 242, 242, 1)
+	border-top: 0px solid rgba(134, 150, 150, 1)
+	border-bottom: 0px solid rgba(134, 150, 150, 1)
+	.info-box
+		padding: 20px 0 30px 0
+		.banner, .social-group
+			text-align: right
+		.social-group
+			img
+				-webkit-transition: .3s
+				-moz-transition: .3s
+				-o-transition: .3s
+				transition: .3s
+				transition: .3s
+			img:hover
+				opacity: .6	
+		.help-box
+			float: left
+			display: inline-block
+			.img-box
+				text-align: center
+			p
+				font-size: 20px
+				color: #869696
+				font-family: 'Roboto', sans-serif
+				font-weight: 100 !important
+				text-align: center
+	.menu-box
+		background-color: rgba(172, 225, 82, 1)
+		nav
+			ul
+				padding: 15px 0
+				display: inline-block
+				li 
+					display: inline-block
+					padding: 0 15px
+					position: relative
+					ul.inner-menu
+						display: none
+						position: absolute
+						padding-top: 40px
+						top: 0
+						left: 0
+						li
+							text-align: center
+							background-color: rgba(172, 225, 82, 1)
+							width: 100%
+							padding-top: 10px
+						li:first-child
+							padding-top: 3px
+						li:last-child 
+							padding-bottom: 3px
+					a 
+						color: #fff
+						text-transform: uppercase
+						-webkit-transition: .3s
+						-moz-transition: .3s
+						-o-transition: .3s
+						transition: .3s
+						transition: .3s
+					a:hover
+						color: #549093 
+					a:hover ~ ul.inner-menu
+						display: block
+					ul.inner-menu:hover
+						display: block
+
+		.cart-box
+			float: right
+			padding-top: 10px
+			svg
+				width: 30px
+				color: #549093
+				-webkit-transition: .3s
+				-moz-transition: .3s
+				-o-transition: .3s
+				transition: .3s
+				transition: .3s
+			svg:hover
+				opacity: .8
+
+
+

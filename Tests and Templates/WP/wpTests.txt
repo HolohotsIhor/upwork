@@ -1,0 +1,1007 @@
+87. How do you check a WordPress function does if you see it for the first time?
+Answers:
+• Browse the Codex.
+  Look at the source code.
+? Google it.
+
+
+
+
+88. What is the name of the table in database which stores custom fields data?
+Answers:
+• wp_custommeta
+  wp_options
+  wp_terms
+  wp_postmeta
+
+
+
+
+  89. How you retrieve an array of all the post tags?
+Note: There may be more than one right answer
+Answers:
+  get_terms(‘post_tag’, array(‘hide_empty’ => false));
+• get_terms(array(‘taxonomy’ => ‘post_tag’, ‘hide_empty’ => false));
+  get_term();
+  wp_terms()
+• wp_terms_checklist();
+
+
+
+
+90. When should the wp_kses function for Data Validation be run?
+Answers:
+  At the time of form submission
+• Before the data is saved in the database.
+  before the data is being rendered on the webpage
+
+
+
+
+91
+  printf( _n( ‘%d person has seen this post.’, ‘%d people have seen this post.’, $view_count ), $view_count );
+  printf( __( ‘%d people have seen this post.’ ), $view_count );
+  echo _n( ‘One person has seen this post’, “$view_count people have seen this post.” );
+• printf( _n( ‘%d person has seen this post.’, ‘%d people have seen this post.’ ), $view_count );
+  printf( 1 == $view_count ? __( ‘%d person has seen this post.’ ) : __( ‘%d people have seen this post.’ ), $view_count );
+
+
+
+
+92. What WordPress function would you use to retrieve the name of the current action?
+Answers:
+• current_filter
+  current_action_name
+  current_hook
+
+
+
+
+  93. What are the correct ways for displaying post title wrapped into H1 tag?
+Note: There may be more than one right answer
+Answers:
+  <?php the_title( ‘<h1>’, ‘</h1>’ ); ?>
+• <h1><?php get_the_title(); ?></h1>
+  <?php the_title( ‘<h1>’, ‘</h1>’, ‘display_title’ ); ?>
+• <h1><?php the_title(); ?></h1>
+
+
+
+
+94. Display the current pagination number.
+Answers:
+  $page = get_page(‘1’);
+echo ‘Current page: ’ . $page->post_paged;
+• $paged = get_query_var(‘paged’, 1);
+echo ‘Current page: ’ . $paged;
+  $page = get_post(‘1’);
+echo ‘Current page: ’ . $page->post_paged;
+
+
+
+
+95. What is the WordPress way of adding a query variable to an URL
+Answers:
+  site_url(‘?’ . $foo . ‘=’ . $bar);
+• home_url(‘$’ . $foo . ‘=’ . $bar);
+  add_query_arg($foo, $bar, home_url());
+
+
+
+
+  96. When is it recommended to rebuild the $wp_rewrite object with the flush_rewrite_rules() function?
+Answers:
+  once in a while
+  after every one hour
+  on every custom post type page load
+• after activatation and deactivation of a custom post types plugin
+
+
+
+
+97. What is the difference between filters and actions?
+Answers:
+ An action is defined as a function that takes in some kind of input, modifies it, and then returns it whereas a filter is just a place where you call a function, and you don’t really care what it returns
+• A filter is defined as a function that takes in some kind of input, modifies it, and then returns it whereas an action is just a place where you call a function, and you don’t really care what it returns
+ There is no difference. Both are used for hooking into an action.
+
+
+
+
+ 98. Which HTML tags are not allowed to be used in a post comment?
+Note: There may be more than one right answer
+Answers:
+ code
+• form
+ img
+• strike
+ table
+
+
+
+
+ 99. Which of the following is the correct way to register shortcode?
+Answers:
+ function foobar_func ( $atts ){
+return “foo and bar”;
+}
+new_shortcode( ‘foobar’, ‘foobar_func’ );
+
+ function foobar_func ( $atts ){
+return “foo and bar”;
+}
+insert_shortcode( ‘foobar’, ‘foobar_func’ );
+
+ function foobar_func ( $atts ){
+return “foo and bar”;
+}
+register_shortcode( ‘foobar’, ‘foobar_func’ );
+
+• function foobar_func ( $atts ){
+return “foo and bar”;
+}
+add_shortcode( ‘foobar’, ‘foobar_func’ );
+
+
+
+
+100. If you need to store information temporarily, which WordPress system would you use:
+Answers:
+• Options
+  Meta tables
+  Transients
+  The REST API
+
+
+
+
+  101. What is true about the_meta() function?
+Note: There may be more than one right answer
+Answers:
+• This is a function for displaying custom fields for the current post, known as the “post-meta” (stored in the wp_postmeta table).
+• It formats the data into an unordered list.
+  It may be used outside the loop.
+• the_meta() will ignore meta_keys (i.e. field names) that begin with an underscore.
+
+
+
+
+102. Is it possible to retrieve list of custom taxonomy terms with get_terms() function?
+Answers:
+• Yes
+  No
+
+
+
+
+  103. Which WP global object is used to execute custom database queries?
+Answers:
+• $wpdb
+  $wp_db
+  $db_query
+  $wp_query
+
+
+
+
+  104. What are WordPress hooks?
+Answers:
+  Setting options available to WordPress administrators.
+  Security functions that run inside WordPress
+  Group of plugins which control WordPress behavior.
+• Ways to change the default behavior of WordPress.
+
+
+
+
+105. Which from below are default post types in WordPress and are readily available to users or internally used by the WordPress installation by default:
+Note: There may be more than one right answer
+Answers:
+• Post
+  Page
+  Links
+  Attachment
+  Revision
+• Comments
+• Navigation menu
+
+
+
+
+106. Which of the following is an example of a WordPress plugin that provides pagination capabilities?
+Answers:
+  Page Break
+  Page Generator
+• WP-PageNavi
+  Page-list
+
+
+
+
+  107. Which of the following is not a WordPress role?
+Answers:
+  System
+  Subscriber
+  Administrator
+• Editor
+
+
+
+
+108. Is it possible to disable the trash and delete the posts immediatelly?
+(Is it possible to disable the trash and delete the posts immediately?)
+Answers:
+  No.
+• Yes, via a define in wp-config.php: define(‘EMPTY_TRASH_DAYS’, 0);
+  Yes, via a define in wp-config.php: define(‘EMPTY_TRASH_DAY’, 0);
+
+
+
+
+  109. Select all the WordPress supported audio formats.
+Note: There may be more than one right answer
+Answers:
+  aiff
+• mp3
+• ogg
+  flac
+• wma
+• m4a
+• wav
+
+
+
+
+  110. Sometimes you might want to disable all the automatic background updates of WordPress, extensions, themes and languages. How would you accomplish that?
+Note: There may be more than one right answer
+Answers:
+• via a define in wp-config.php: define(‘AUTOMATIC_UPDATER_DISABLED’, true);
+• with a filter: add_filter(‘automatic_updater_disabled’, ‘__return_true’);
+  I’m using git, so I would use a special filter:
+add_filter(‘automatic_updates_is_vcs_checkout’, ‘__return_false’, 1);
+
+
+
+
+111. What is the correct way to use the _n() function?
+Answers:
+• printf( _n( ‘The post has 1 star.’, ‘The post has %d stars.’, $view_count ), $view_count );
+  printf( _n( ‘The post has %d star.’, ‘The post has %d stars.’, $view_count ), $view_count );
+
+
+
+
+  112. How do you know if a WordPress action has been previously fired?
+Answers:
+  Using the has_action(‘my_action’) function.
+• Using the did_action(‘my_action’) function.
+  Using the current_filter function.
+
+
+
+
+  113. What is the correct way for displaying navigation menu called “Primary Menu”?
+Answers:
+• wp_nav_menu( array(
+‘menu’ => ‘Primary Menu’
+) );
+ wp_navigation_menu( array(
+‘menu’ => ‘primary-menu’
+) );
+ wp_navigation( array(
+‘menu’ => ‘Primary Menu’
+) );
+ wp_menu( array(
+‘menu’ => ‘primary-menu’
+) );
+
+
+
+
+114. How you determine if a script has been enqueued correctly?
+Answers:
+  has_enqueue_script(‘my-script-handle’);
+• wp_script_is(‘my-script-handle’, ‘enqueued’);
+  is_script_loaded(‘my-script-handle’);
+
+
+
+
+  115. Which of the following is incorrect possible value for $show attribute of bloginfo($show) function?
+Answers:
+  ‘name’
+  ‘description’
+• ‘homeurl’
+  ‘admin email’
+
+
+
+
+  116. How to display the value of a post meta field named my_custom?
+Answers:
+• $post_meta = get_post_meta($post->ID, ‘my_custom’, true);
+echo $post_meta;
+  $post_meta = get_post_meta($post->ID);
+echo $post_meta;
+  echo get_meta($post->ID, ‘my_custom’);
+
+
+
+
+  117. Is it possible to create posts programmatically?
+Answers:
+  No
+• Yes, with wp_insert_post() function
+  Yes, with wp_add_post() function
+  Yes, with wp_create_post() function
+
+
+  118. What type of hook is wp_meta
+Answers:
+• Action Hook
+  Filter Hook
+  
+
+  119. Is it possible to bypass trash and force deletion with wp_delete_post() function?
+Answers:
+• No
+  Yes
+
+
+
+
+  120. Retrieve all the post types that support thumbnails or excerpts.
+Answers:
+  get_post_type(array(‘supports’ => array(‘thumbnail’, ‘excerpt’)), ‘names’, ‘or’);
+• post_type_supports(‘post’, array(‘thumbnail’, ‘excerpt’), ‘or’);
+  get_post_types_by_support(array(‘thumbnail’, ‘excerpt’), ‘or’);
+
+
+
+
+  121. What is the name of self-hosted version of WordPress?
+Answers:
+  WordPress.com
+• WordPress.org
+  Open Source WordPress
+  WordPress online
+
+
+
+
+  122. Where can you change the Timezone used by WordPress in the dashboard?
+Answers:
+  In Settings > Media
+• In Settings > General
+  In Settings > Reading
+  In Settings > Writing
+
+
+  123. Select all the default taxonomies in WordPress.
+Note: There may be more than one right answer
+Answers:
+  post_category
+• post_tag
+• link_category
+  product_tag
+  post_format
+• category
+
+
+
+
+124. Which files are a minimum required by a theme to function?
+Answers:
+  style.css and functions.php
+• style.css and index.php
+  index.php and functions.php
+  index.php, functions.php and style.css
+
+
+
+
+  125. What is WordPress multisite?
+Answers:
+  Special version of WordPress that can support many sites and is not free.
+• WP configuration feature that supports multiple sites.
+  A WP plugin that supports multiple sites.
+  A popular WP theme that supports multiple sites.
+
+
+
+
+  126. Select all the default post types in WordPress.
+Note: There may be more than one right answer
+Answers:
+• post
+• page
+• attachment
+• revision
+  nav_menu_item
+
+
+
+
+  127. How do you enable the Network Setup menu item(enable Multisite) in WordPress?
+Answers:
+  Install WP MU plugin
+• Activate WP Multisite in Settings menu
+  Set WP_ALLOW_MULTISITE as true in wp-config.php
+  WP MU has been discontinued as a separate project so there is no way to set up multisites in WP now
+
+
+
+
+  128. Which of the following is the correct way for enabling support for Post Thumbnails?
+Answers:
+  add_theme_support( ‘thumbnails’ );
+  add_support( ‘post-thumbnails’ );
+• add_theme_support( ‘post-thumbnails’ );
+  theme_support( ‘thumbnails’ );
+
+
+
+
+
+  129. How would you extend the time of the WordPress login session?
+Answers:
+• add_filter( ‘auth_cookie_expiration’, ‘stay_logged_in_for_1_year’ );
+function stay_logged_in_for_1_year( $expire ) {
+return 31556926; // 1 year in seconds
+}
+  add_filter(‘auth_cookie’, ‘stay_logged_in_for_1_year’);
+function stay_logged_in_for_1_year($expire) {
+return 31556926;
+}
+  add_filter(‘secure_logged_in_cookie’, ‘stay_logged_in_for_1_year’);
+function stay_logged_in_for_1_year($expire) {
+return 31556926;
+}
+
+
+
+
+130. Which of these are a part of WordPress API?
+Note: There may be more than one right answer.
+Answers:
+• Theme Modification API
+• Metadata API
+  Theme Update API
+• Settings API
+• Options API
+• Theme Customization API
+  User API
+  Update API
+
+
+
+
+131. Which concept does WordPress uses to control user access to different features?
+Answers:
+  Username
+  Access tokens
+• Role
+  Cookies
+
+
+
+
+  132. Which constant is NOT recognized in wp-config.php?
+Answers:
+  WP_SITEURL
+  WP_CONTENT_DIR
+  WP_CONTENT_URL
+• WP_HOME_URL
+
+
+
+
+133. What is the default table prefix in WP?
+Answers:
+  _wp
+  w_
+• wp_
+  wp-
+
+
+
+
+  134. Which is the most important file that should be deleted from your WordPress install directory once you’ve completed setup?
+Answers:
+  setup-example.xml
+  wp_config_sample.php
+• wp-config-sample.php
+  wp-setup-sample.php
+
+
+
+
+  135. Display an Admin Notice in a Network Admin Dasboard of a WordPress multi site install.
+Answers:
+  function my_network_admin_notice() {
+echo ‘<div class=»updated»><p>Network Admin Dashboard Notice!</p></div>’;
+}
+add_action(‘admin_notices’, ‘my_network_admin_notice’);
+
+• function my_admin_notice() {
+echo ‘<div class=»updated»><p>Network Admin Dashboard Notice!</p></div>’;
+}
+add_action(‘network_admin_notice’, ‘my_admin_notice’);
+
+  function my_notice() {
+echo ‘<div class=»updated»><p>Network Admin Dashboard Notice!</p></div>’;
+}
+add_action(‘network_admin_notices’, ‘my_notice’);
+
+
+
+
+136. You need a single post meta value in a bigger post loop and you need it only one time, and you want it to be as fast as possible. How would you proceed?
+Answers:
+  Of course, get_post_meta($post->ID, ‘post_meta’, true); — пока это, помечать оценку.
+• I would use a direct query like: $wpdb->get_var($wpdb->prepare(«SELECT meta_value from $wpdb->postmeta WHERE post_id = %d and meta_key = ‘post_meta’”, $post->ID));
+  I would use a direct query like: $wpdb->get_results($wpdb->prepare(«SELECT * from $wpdb->postmeta WHERE meta_key = %s”, ‘post_meta’));
+
+
+
+
+  137. How do you enable debug mode in WP?
+Answers:
+  By going to Dashboard > Settings > General and then enable debug mode
+• By setting WP_DEBUG as true in wp-config.php
+  It is enabled by default
+
+
+
+
+  138. What are the default plugins installed in the WordPress?
+Note: There may be more than one right answer.
+Answers:
+  Contact form7
+• Akismet
+  All in one SEO
+• Hello Dolly
+
+
+
+
+139. Which function(s) can be used to programatically create a new user in WordPress?
+Note: There may be more than one right answer.
+Answers:
+  wp_update_user
+• wp_create_user
+  register_new_user
+• wp_insert_user
+
+
+
+
+140. Which of the following functions check if current visitor is a logged in user?
+Answers:
+  is_visitor_logged_in ();
+• is_user_logged_in ();
+  if_user_logged_in ();
+  is_user_logged ();
+
+
+
+
+  141. Which one of the following files is located in the root of your WordPress installation directory and contains your website’s setup details, such as database connection info?
+Answers:
+  setup.html
+  wp-setup.php
+• wp-config.php
+  wp-install.php
+
+
+
+
+  142. What can the Contributor role do?
+Answers:
+  Moderate comments
+  Publish posts
+• Edit posts
+  Edit pages
+
+
+
+
+  143. What is common to all these functions: next_post, previous_post, link_pages, the_author_url, wp_get_link?
+Answers:
+• They all return URLs
+  They are all deprecated
+  They all point to posts or post lists
+  They all echo something
+
+
+
+
+  144. Pick the correct default Post Types readily available to users or internally used by the WordPress installation.
+Note: There may be more than one right answer.
+Answers:
+• Post
+• Page
+  Blog
+  Media
+  Archive
+  Category
+
+
+
+
+  145. Where can you set a static page as the front page in WP?
+Answers:
+  In wp-config.php
+• In Dashboard->Settings->Reading
+  In Dashboard->Settings->General
+  In Dashboard->Appearance
+
+
+
+
+  146. How do you check if the current user has the role “administrator”?
+Note: There may be more than one right answer.
+Answers:
+  current_user_can_do(‘manage_options’);
+  is_admin();
+• current_user_can(‘administrator’);
+  current_user_can_do(‘manage’);
+• in_array(‘administrator’, wp_get_current_user()->roles);
+
+
+
+
+147. Which of the following is true about bloginfo(‘url’); function?
+Answers:
+  Displays URL of the active theme’s directory.
+• Displays the “Site address (URL)” set in Settings > General. This data is retrieved from the “home” record in the wp_options table.
+  Displays the current post URL.
+  Displays the “WordPress address (URL)” set in Settings > General. This data is retrieved from the “siteurl” record in the wp_options table.
+
+
+
+
+  148. Clean up a comma-separated list of post ids. Example list: 1254,9930,10974,”192”,9930,192
+Answers:
+  array_map(‘absint’, ’1254,9930,10974,”192”,9930,192’);
+  explode(1254,9930,10974,”192”,9930,192);
+• wp_parse_id_list(1254,9930,10974,”192”,9930,192);
+
+
+
+
+149. How many WordPress posts can you create?
+Answers:
+  WordPress recommends less than 10,000 posts.
+• WordPress is limited to 1,000 posts.
+  WordPress has not set any limit.
+  WordPress is limited to 1,00,000 posts.
+
+
+
+
+ 150. You need to include a link in a sentence. How can you do that?
+Answers:
+ _e( ‘Publish something using our <a href=»http://support.wordpress.com/post-by-email/»>Post by Email</a> feature.’ );
+• printf( __( ‘Publish something using our <a href=»%s»>Post by Email</a> feature.’), ‘http://support.wordpress.com/post-by-email/’ );
+  printf( __( ‘Publish something using our %s feature.’ ), sprintf( ‘<a href=»http://support.wordpress.com/post-by-email/»>%s</a>’, __( ‘Post by Email’ ) ) );
+
+
+
+
+  151. Assuming we are using ‘wp_’ as the database table prefix, in which table are all the custom fields related to a post stored?
+Answers:
+  wp_posts
+• wp_postmeta
+  wp_terms 
+
+
+
+
+  152. Which is the default site update service that WordPress automatically notifies when you publish a new post?
+Answers:
+• http://rpc.pingomatic.com
+  http://google.com
+  http://ping.feedburner.com
+  http://www.feedsubmitter.com
+
+
+
+
+
+  153. Which of the following is not a default image size in WP?
+Answers:
+• Small Size
+  Medium Size
+  Large Size
+  Thumbnail Size
+
+
+
+
+  154. What is a permalink?
+Answers:
+• Permalinks are the permanent URLs to your individual weblog posts, as well as categories and other lists of weblog postings.
+  The numeric IP address of your WordPress site.
+  The complete URL of your WordPress site.
+  A popular WordPress plugin.
+
+
+
+
+  155. Which of the following is not a default user role in WP?
+Answers:
+• Blogger
+  Author
+  Subscriber
+  Contributor
+
+
+
+
+  156. How many WordPress themes can be installed in a single WordPress installation?
+Answers:
+  1
+  10
+• 100
+  Unlimited
+ 
+
+
+
+
+  157. Arrange the following templates in decreasing order of priority from left to right for Site Front Page:
+index.php
+front-page.php
+home.php
+Answers:
+ index.php, front-page.php, home.php
+  front-page.php, home.php, index.php
+  home.php, front-page.php, index.php
+• front-page.php,index.php home.php
+
+
+
+
+158. What database does WordPress use?
+Answers:
+  Notes
+  PostgreSQL
+• MySQL
+  Oracle
+
+
+
+
+159. Which of the following files in a WP theme is NOT a file required by the theme review team for acceptance into the WordPress.org theme directory?
+Answers:
+• page.php
+  style.css
+  index.php
+  comments.php
+  screenshot.png
+
+
+
+
+  160. Select all of the supported page statuses in WordPress.
+Note: There may be more than one right answer.
+Answers:
+• draft (Draft)
+• pending (Pending Review)
+  private (Private)
+• publish (Published)
+
+
+
+
+161. Which of the following strings is not a default WordPress post format slug?
+Answers:
+• aside
+  image
+  quote
+  status
+
+
+
+  162. Which hook can be used to update kses and TinyMCE to allow select new attributes for an HTML element?
+Answers:
+  tool_box
+• tiny_mce_before_init
+  tiny_mce_plugins
+  htmledit_pre
+
+
+
+
+  163. Where plugins options are stored in WordPress?
+Answers:
+  They are stored in WordPress theme folder.
+  They are stored in WordPress plugins folder.
+  They are stored in WordPress.org and not on your site.
+• They are stored in WordPress Database.
+
+
+
+164. When adding a function to the “the_content” hook, where will you see changes?
+Answers:
+  On the blog list page.
+  On the single post page.
+• It depends on how your theme is set up.
+  On the archive page.
+
+
+
+
+  165. Which standard WP class do you need to necessarily extend to create your widget?
+Answers:
+• WP_Widget
+  WP_Widget_Form_Customize_Control
+  WP_Customize_Control
+  WP_Customize_Sidebar_Section
+
+
+
+
+  166. Which of the following is true about wp_mail() function?
+Note: There may be more than one right answer.
+Answers:
+  A true return value does not automatically mean that the user received the email successfully.
+• For this function to work, the settings SMTP and smtp_port (default: 25) need to be set in your php.ini file.
+  The default content type allows using HTML.
+• The function can handle only one email as $to parameter.
+
+
+
+
+167. Which hook fires after WordPress has finished loading but before any headers are sent?
+Answers:
+• activate_wp_head
+• init
+• activate_header
+• xmirpc_call
+
+
+
+
+168. Which loop is used by default to fetch the posts and loop through them?
+Answers:
+  for loop
+• while loop
+  foreach loop
+
+
+
+  169. Pick the default template tag(s).
+Note: There may be more than one right answer.
+Answers:
+  the_field()
+• wp_title()
+• the_title()
+  wp_field()
+
+
+
+
+  170. Arrange the following templates in decreasing order of priority from left to right used to display the posts on a Category page.
+index.php
+category.php
+archive.php
+category-ID.php
+category-slug.php
+Answers:
+  category-ID.php, category-slug.php, category.php, archive.php, index.php
+  category-slug.php, archive.php, category.php, category-ID.php, index.php
+  index.php, category.php, archive.php, category-ID.php, category-slug.php
+• category-slug.php, category-ID.php, category.php, archive.php, index.php
+
+
+
+
+171. Which function should be used to insert a post title into the title attribute of an HTML element?
+Answers:
+  get_the_title();
+  the_title_attribute();
+• the_title();
+
+
+
+
+172. Which of the following is/are NOT the default abstract methods available in the Walker class for menus?
+Note: There may be more than one right answer.
+Answers:
+  start_lvl()
+  end_lvl()
+• start_li()
+• end_li()
+
+
+
+
+173. What does wp_rand() function?
+Answers:
+  Gets random post ID.
+  Gets random category ID.
+  Generates a random post ID for wp_insert_post() function.
+• Generates a random number.
+
+
+
+
+174. Is it possible to update posts programmatically?
+Answers:
+  Yes, with wp_edit_post() function.
+• Yes, with wp_update_post() function.
+  Yes, with wp_change_post() function.
+  No.
+
+
+
+
+  175. Where do you change theme name and author details?
+Answers:
+• style.css file in the theme folder
+  index.php file in the theme folder
+  readme.txt file in the theme folder
+
+
+
+
+  176. What is the correct order of priority in decreasing order from left to right for Custom Post Type template files?
+Answers:
+  single-{post-type}-{slug}.php, single-{post-type}.php, single.php, singular.php, index.php
+• single-{post-type}.php, single-{post-type}-{slug}.php, single.php, singular.php, index.php
+  single-{post-type}.php, single.php, singular.php, single-{post-type}-{slug}.php, index.php
+  index.php, singular.php, single-{post-type}-{slug}.php, single-{post-type}.php, single.php
+
+
+
+
+  177. Which default WP function can be used to assign different classes to the body element?
+Answers:
+• body_class()
+  get_body_classes()
+  get_theme_support()
+  sanitize_html_class()
+
+
+
+
+  178. What is the name of theme file for a page with slug ‘about-us’?
+Answers:
+• about-us.php
+  page-about-us.php
+  page-about.php
+  about-us-page.php
+
+
+
+
+  179. Which of the following is the correct way to display featured image of post?
+Note: There may be more than one right answer.
+Answers:
+• echo get_the_post_thumbnail($page->ID, ‘thumbnail’);
+  echo get_the_featured_image($page->ID, ‘thumbnail’);
+• the_post_thumbnail($page->ID, ‘thumbnail’);
+  the_featured_image($page->ID, ‘thumbnail’);
+
+
+
+
+  180. How will you check if a page exists for a given URL?
+Answers:
+• get_page_by_path()
+  get_page_url()
+  get_page_link()
+  get_page_uri()
+
+
+
+
+181. Which of these would be the correct way to output the escaped username in a sentence?
+Answers:
+  <?php scanf( __( ‘Howdy, %s’ ), $username ); ?>!
+  <?php echo __( ‘Howdy’ ) . ‘, ‘ . $username; ?>!
+• <?php printf( __( ‘Howdy, %s!’ ), $username ); ?>
+  <?php _e( «Howdy, $username!» ); ?>
+  <?php _e( ‘Howdy, %s!’, $username ); ?>

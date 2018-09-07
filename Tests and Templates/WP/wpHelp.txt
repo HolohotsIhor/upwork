@@ -1,0 +1,13 @@
+<?php get_header(); ?>
+<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+<!-- post --> 
+<?php endwhile; ?>
+<!-- no post found -->
+<?php endif; ?>
+
+ <?php the_title();?>                             <!-- post title -->
+ <?php the_content();?>                           <!-- post content -->
+ <?php the_tags('<span>Теги:</span> ');?>         <!-- tags in post  -->
+ <?php the_date('d.m.Y');?>                       <!-- tags in post  -->
+ <a href="<?php the_permalink();?>">test_url</a>  <!-- post url -->
+ <?php the_excerpt();?>                           <!-- 55 words in post -->

@@ -1,0 +1,106 @@
+@import "../bourbon/bourbon"
+
+$color: #FF6347 //Theme skin
+$text_color: #888
+$main_color: #222
+$bg_light: #fafafa
+$default_padding: 70px 0 80px
+$white: #fff
+$sizeMiddle: 991px
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+	+kerning(1)
+
+a
+	color: $color
+
+p
+	color: $text_color
+
+.toggle_mnu
+	background-color: $main_color
+
+.color_element
+	color: $color
+.color_bg
+	background-color: $color
+
+.color_border
+	border-color: $color
+
+.main_color_bg
+	background-color: $main_color
+
+.top_mnu
+	a:hover
+		color: #color
+
+.top_mnu
+	a:hover
+		color: $color
+		background-color: rgba(255,255,255, .1)
+		+kerning(5)
+
+.top_description
+	p
+		color: $bg_light
+		+kerning(5)
+
+.author_description
+	+kerning(5)
+	&::after
+		background-color: $main-color
+
+.bg_dark
+	background-color: $main_color
+	.desc_wrap
+		color: $white
+		a
+			color: $white
+
+.bg_light
+	background-color: $bg_light
+
+.bg_white
+	background-color: $white
+
+.main_footer
+	+kerning(0)
+
+section
+	h3
+		+kerning(3)
+		color: $text_color
+
+.s_contacts
+	p:nth-child(even)
+		color: $color
+
+.rusume-container h3
+	color: $main_color
+	+kerning(1)
+	font-size: 16px
+	font-weight: 400px
+
+.resume-icon
+	margin-bottom: 20px
+	font-size: 30px
+
+.s_portfolio 
+	li 
+		+kerning(2)
+		color: $text_color
+		&.active
+			color: $white
+			border-bottom: solid 1px $color
+
+.portfolio-content
+	.portfolio_item 
+		.portfoli-item-cont
+			a
+				border-color: $color
+				color: $color
