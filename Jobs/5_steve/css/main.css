@@ -1,4 +1,7 @@
 /* *********** Header ********** */
+ol, ul {
+  margin-bottom: 0px; }
+
 body {
   font-family: "AvenirLTLight", Helvetica, OpenSansRegular;
   font-size: 14px; }
@@ -31,7 +34,8 @@ header {
         font-weight: 100 !important;
         text-align: center; }
   header .menu-box {
-    background-color: #ace152; }
+    background-color: #ace152;
+    border-bottom: solid 3px #e8f8fa; }
     header .menu-box nav ul {
       padding: 15px 0;
       display: inline-block; }
@@ -44,7 +48,8 @@ header {
           position: absolute;
           padding-top: 40px;
           top: 0;
-          left: 0; }
+          left: 0;
+          z-index: 999; }
           header .menu-box nav ul li ul.inner-menu li {
             text-align: center;
             background-color: #ace152;
@@ -81,5 +86,9 @@ header {
         transition: 0.3s; }
       header .menu-box .cart-box svg:hover {
         opacity: 0.8; }
+
+/* *********** Header end ********** */
+/* *********** Sections start ********** */
+/* *********** Sections end ********** */
 
 /*# sourceMappingURL=main.css.map */

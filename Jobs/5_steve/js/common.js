@@ -71,3 +71,4 @@ $(window).load(function() {
 	$(".top_text p").animated("fadeInUp", "fadeOutDown");
 
 }); 
+
