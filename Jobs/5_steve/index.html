@@ -10,20 +10,19 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="libs/linea/styles.css" / <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="libs/linea/styles.css" />
+    <link rel="stylesheet" href="libs/carousel/style.css" />
+    <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
     <link rel="stylesheet" href="libs/animate/animate.min.css" <link rel="stylesheet" href="css/fonts.css" />
     <link href="libs/slider/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/skins/purple.css" />
+    <link rel="stylesheet" href="css/skins/tomato.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <!-- New scripts -->
-    <script>
-    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-    </script>
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Header start-->
     <header>
         <div class="container">
             <div class="row info-box">
@@ -83,58 +82,189 @@
             </div>
         </div>
     </header>
+    <!-- Header end-->
+    <!-- Slider section start-->
     <section id="slider" class="slider">
         <div class="container">
             <div class="row">
                 <!-- Slider start -->
-                <section id="slider" class="container">
-                    <ul class="slider-wrapper">
-                        <li class="current-slide">
-                            <img src="img/slider/slide1.jpg" title="NATURAL TONE" alt="NATURAL TONE">
-                            <div class="caption">
-                                <h2 class="slider-title">NATURAL TONE <br>
-									ORGANIC SKINCARE & SUNCARE</h2>
-                                <p>
-                                    100% Natural with organic ingredients Toxic free Reef friendly Biodegradable Environmentally safe Never tested on animals
-                                </p>
-                                <a href="#">SHOP NOW</a>
+                <ul class="slider-wrapper">
+                    <li class="current-slide">
+                        <img src="img/slider/slide1.jpg" title="NATURAL TONE" alt="NATURAL TONE">
+                        <div class="caption first">
+                            <h2 class="slider-title">NATURAL TONE <br>
+								ORGANIC SKINCARE & SUNCARE</h2>
+                            <div class="slide-text-box">
+                                <p>&#10004; 100% Natural with organic ingredients</p>
+                                <p>&#10004; Toxic free</p>
+                                <p>&#10004; Reef friendly</p>
+                                <p>&#10004; Biodegradable</p>
+                                <p>&#10004; Environmentally safe</p>
+                                <p>&#10004; Never tested on animals</p>
                             </div>
-                        </li>
-                        <li>
-                            <img src="img/slider/slide2.jpg" title="LEARN BEFORE YOU BURN" alt="LEARN BEFORE YOU BURN">
-                            <div class="caption">
-                                <h2 class="slider-title">LEARN BEFORE YOU BURN TM <br>
+                            <a href="#">SHOP NOW</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/slider/slide2.jpg" title="LEARN BEFORE YOU BURN" alt="LEARN BEFORE YOU BURN">
+                        <div class="caption">
+                            <h2 class="slider-title">LEARN BEFORE YOU BURN<span>&trade;</span><br>
 														 PROTECTION FIRST!
                                 </h2>
-                                <p>
-                                    Dedicated & fully trained suncare advisors Working with hotels, resorts & travel operators Spain, Portugal, Cyprus & US
-                                </p>
-                                <a href="#">LEARN MORE</a>
+                            <div class="slide-text-box">
+                                <p>&#10004; Dedicated & fully trained suncare advisors</p>
+                                <p>&#10004; Working with hotels, resorts & travel operators</p>
+                                <p>&#10004; Spain, Portugal, Cyprus & US</p>
                             </div>
-                        </li>
-                        <li>
-                            <img src="img/slider/slide3.jpg" title="THE BEST PRODUCT EVER" alt="THE BEST PRODUCT EVER">
-                            <div class="caption">
-                                <h2 class="slider-title">THE BEST PRODUCT EVER!</h2>
-                                <p>
-                                    ​ Have been using it for over 15 years. Use the sun lotion nearly every day now that I am living in Spain. No sunburn or prickly heat which I used to get all the time. Aftersun is so cooling and all products smell gorgeous. Always have a great tan! Sheila Downie - February 11, 2018
-                                </p>
-                                <a href="#">READ MORE TESTIMONIALS</a>
+                            <a href="#">LEARN MORE</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/slider/slide3.jpg" title="THE BEST PRODUCT EVER" alt="THE BEST PRODUCT EVER">
+                        <div class="caption central">
+                            <h2 class="slider-title">THE BEST PRODUCT EVER!</h2>
+                            <div class="slide-text-box">
+                                <p>Have been using it for over 15 years. Use the sun lotion nearly every day now that I am living in Spain.</p>
+                                <p>No sunburn or prickly heat which I used to get all the time. Aftersun is so cooling and all products smell gorgeous. Always have a great tan!</p>
+                                <p> Sheila Downie - February 11, 2018</p>
                             </div>
-                        </li>
-                        <li>
-                            <img src="img/slider/slide4.jpg" title="HELPING YOU KEEP" alt="HELPING YOU KEEP">
-                            <div class="caption">
-                                <h2 class="slider-title">HELPING YOU KEEP YOU & <br>YOUR KIDS SAFE IN THE SUN</h2>
-                                <p>
-                                    Natural protection for the whole family Excellent for both adults & children Water resistant sunscreens
-                                </p>
-                                <a href="#">SHOP NOW</a>
+                            <a href="#">READ MORE TESTIMONIALS</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/slider/slide4.jpg" title="HELPING YOU KEEP" alt="HELPING YOU KEEP">
+                        <div class="caption">
+                            <div class="slide-text-box last">
+                                <h2 class="slider-title">HELPING YOU KEEP<br> YOU & YOUR KIDS SAFE IN THE SUN</h2>
+                                <p>&#10004; Natural protection for the whole family</p>
+                                <p>&#10004; Excellent for both adults & children</p>
+                                <p>&#10004; Water resistant sunscreens</p>
                             </div>
-                        </li>
-                    </ul>
-                    <ul id="control-buttons" class="control-buttons"></ul>
-                </section>
+                            <a href="#">SHOP NOW</a>
+                            <br>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="control-buttons" class="control-buttons"></ul>
+            </div>
+        </div>
+    </section>
+    <!-- Slider section end -->
+    <!-- About product section start -->
+    <section id="aboutProduct" class="aboutProduct">
+        <div class="container">
+            <div class="row">
+                <p>
+                    Suncare Central brings you the world's best Skincare & Sun Protection Products 100% natural with organic ingredients!
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- About product section end -->
+    <!-- Channel section start -->
+    <section id="channelSection" class="channelSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 cold-sm-12 col-xs-12 col-md-offset-1">
+                    <div class="channel-info-box">
+                        <h3>My Channel</h3> .
+                    </div>
+                    <!-- Carousel start -->
+                    <div class="kai_banner_container clearfix">
+                        <div class="kai_banner_body clearfix">
+                            <a href="">
+                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            </a>
+                            <a href="">
+                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            </a>
+                            <a href="">
+                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            </a>
+                            <a href="">
+                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            </a>
+                            <a href="">
+                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            </a>
+                            <a href="">
+                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            </a>
+                            <a href="">
+                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            </a>
+                            <a href="">
+                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            </a>
+                            <a href="">
+                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            </a>
+                            <a href="">
+                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            </a>
+                            <a href="">
+                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            </a>
+                            <a href="">
+                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            </a>
+                            <a href="">
+                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            </a>
+                        </div>
+                        <div class="kai_banner_bottombtns">
+                            <span class="highlight" style='background-image:url(img/slider/slide1.jpg)'></span>
+                            <span style='background-image:url(img/slider/slide1.jpg)'></span>
+                            <span style='background-image:url(img/slider/slide2.jpg)'></span>
+                            <span style='background-image:url(img/slider/slide3.jpg)'></span>
+                            <span style='background-image:url(img/slider/slide4.jpg)'></span>
+                            <span style='background-image:url(img/slider/slide1.jpg)'></span>
+                            <span style='background-image:url(img/slider/slide2.jpg)'></span>
+                            <span style='background-image:url(img/slider/slide3.jpg)'></span>
+                            <span style='background-image:url(img/slider/slide4.jpg)'></span>
+                            <span style='background-image:url(img/slider/slide1.jpg)'></span>
+                            <span style='background-image:url(img/slider/slide2.jpg)'></span>
+                        </div>
+                        <div class="kai_banner_prevbtn side_btn"></div>
+                        <div class="kai_banner_nextbtn side_btn"></div>
+                    </div>
+                    <!-- Carousel end -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Channel section end -->
+    <section id="whyChooseUs" class="whyChooseUs">
+        <div class="container">
+            <h2>WHY PEOPLE LOVE <br> NATURAL TONE ORGANIC COLLECTION:</h2>
+            <div class="row main-comment-box">
+                <div class="col-md-4 col-sm-12 col-xs-12 comment-box">
+                    <div class="text-box">
+                        <h3>I LOVE THESE PRODUCTS!</h3>
+                        <p>I've been using them since a holiday in Tenerife in 2009 when my friend was suffering with prickly heat.</p>
+                        <h3 class="authoName">SARAH LOUISE EVANS</h3>
+                        <span>&bdquo;</span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 comment-box">
+                    <div class="text-box">
+                        <h3>LONGLASTING HEALTHY TAN</h3>
+                        <p>Natural Tone Organic Beauty And Tanning Oil is now my favourite daily product. I First used it to help my tan in October last year and it was amazing and my tan lasted for ages.</p>
+                        <h3 class="authoName">JANE WEBBER</h3>
+                        <span>&bdquo;</span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 comment-box">
+                    <div class="text-box">
+                        <h3>THESE TANNING OILS ARE AMAZING!</h3>
+                        <p>I have converted most of my friends and family to this suncare range! Highly recommend!</p>
+                        <h3 class="authoName">NICOLA POCKETT</h3>
+                        <span>&bdquo;</span>
+                    </div>
+                </div>
+                <div class="url-box">
+                	<a href="#">READ MORE TESTIMONIALS</a>	
+                </div>
             </div>
         </div>
     </section>
@@ -145,20 +275,24 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
     <script src="libs/jquery/jquery-2.1.3.min.js"></script>
-    <script src="libs/parallax/parallax.min.js"></script>
     <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="libs/mixitup/mixitup.min.js"></script>
     <script src="libs/scroll2id/PageScroll2id.min.js"></script>
     <script src="libs/waypoints/waypoints.min.js"></script>
     <script src="libs/animate/animate-css.js"></script>
     <script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
+    <!-- Mivue carousel start-->
+    <script type="text/javascript" src="libs/carousel/jquery.kaibanner.js"></script>
+    <!-- Mivue carousel end-->
     <script src="libs/slider/script.js"></script>
     <script src="js/common.js"></script>
-    <!-- Slider -->
     <!-- Yandex.Metrika counter -->
     <!-- /Yandex.Metrika counter -->
     <!-- Google Analytics counter -->
     <!-- /Google Analytics counter -->
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
 </body>
 
 </html>

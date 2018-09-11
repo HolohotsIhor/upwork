@@ -46,10 +46,6 @@ body .main_footer,
   .s_descr::after {
     background-color: #222; }
 
-section h3 {
-  letter-spacing: 3px;
-  color: #888; }
-
 .s_about p:nth-child(even) {
   color: #FF6347; }
 
@@ -100,3 +96,5 @@ form .form-group {
 
 .popup_content {
   letter-spacing: 1px; }
+
+/*# sourceMappingURL=tomato.css.map */

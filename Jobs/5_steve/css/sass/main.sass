@@ -10,6 +10,9 @@ header
 	background-color: rgba(242, 242, 242, 1)
 	border-top: 0px solid rgba(134, 150, 150, 1)
 	border-bottom: 0px solid rgba(134, 150, 150, 1)
+	z-index: 9999
+	position: fixed
+	width: 100%
 	.info-box
 		padding: 20px 0 30px 0
 		.banner, .social-group
@@ -75,6 +78,15 @@ header
 						display: block
 					ul.inner-menu:hover
 						display: block
+				li:first-child
+					padding-left: 0
+
+header 
+	.menu-box 
+		nav 
+			ul 
+				li:first-child
+					padding-left: 15px
 
 		.cart-box
 			float: right
@@ -92,6 +104,80 @@ header
 /* *********** Header end ********** */
 
 /* *********** Sections start ********** */
+section.slider
+	padding-top: 203px
+
+section.aboutProduct
+	padding: 80px 0 60px 0
+	background-color: #6fb2ba
+	p
+		color: #fff
+		font-family: 'Roboto', sans-serif
+		font-size: 32px
+		text-align: center
+		font-weight: 300
+
+section.channelSection
+	padding: 70px 0 40px 0
+	.player-box
+		margin: 0 auto
+
+section.whyChooseUs
+	padding: 40px 0 30px 0
+	background: url(../img/section_bg.jpg) no-repeat 0 0
+	text-align: center
+	h2
+		font-size: 36px
+		color: #F2F2F2
+		text-align: center
+		letter-spacing: 5px
+		font-weight: 500
+		margin-bottom: 40px
+	.comment-box
+		text-align: center
+		.text-box
+			background-color: #c0dfe2
+			min-height: 450px
+			color: #3A6AB9
+			padding: 50px 20px 40px  20px
+			p
+				color: #3A6AB9
+				font-family: 'Roboto', sans-serif
+				font-weight: 200
+				padding: 0 20px
+				font-size: 21px
+				font-style: italic
+				line-height: 30px
+			h3
+				color: #3A6AB9
+				font-size: 18px
+				font-weight: bold
+				margin-bottom: 30px
+			.authoName
+				margin-top: 30px
+				font-size: 16px
+				margin-bottom: 0
+			span
+				font-size: 120px
+				line-height: 0px
+				display: block
+				margin-top: -30px
+	a
+		display: inline-block
+		margin: 30px auto 0px auto
+		color: #3A6AB9
+		background-color: #c0dfe2
+		border-radius: 20px
+		padding: 10px 35px
+		-webkit-transition: .3s
+		-moz-transition: .3s
+		-o-transition: .3s
+		transition: .3s
+		transition: .3s
+	a:hover
+		color: #C3D32D
+		background-color: #fff
+
 
 /* *********** Sections end ********** */
 
