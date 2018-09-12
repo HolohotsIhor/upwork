@@ -1,47 +1,157 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1199px) {
+header .info-box .help-box{
+	width: 100%;
+	text-align: center;
+}
+header .info-box .social-group {
+    text-align: left;
+    padding-top: 65px;
+}
+section.slider {
+    padding-top: 290px;
+}
 
+
+section.channelSection {
+    padding: 50px 0 30px 0;
+}
+section.whyChooseUs .comment-box .text-box h3{
+	margin-bottom: 20px;
+}
+section.whyChooseUs .comment-box .text-box p{
+	font-size: 19px;
+}
+section.whyChooseUs .comment-box .text-box .authoName{
+	margin-top: 20px;
+}
+section.whyChooseUs .comment-box .text-box h3{
+	font-size: 16px;
+}
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-	.personal_last_block {
-		margin-top: 35px;
-	}
+@media only screen and (max-width : 991px) {
+header .menu-box nav ul.descktop_mnu{
+	display:none;
+}	
+header .menu-box .cart-box{
+	right: 35px;
+    top: 165px;
+    position: fixed;
+}
+header .menu-box nav.top_mnu ul li:first-child{
+	padding-left:0px;
+}
+.toggle_mnu{
+	display:block;
+}
+section.slider {
+    padding-top: 240px;
+}
+section.whyChooseUs h2{
+	font-size: 26px;
+}
+section.whyChooseUs .comment-box .text-box{
+	min-height: auto;
+}
+section.whyChooseUs .comment-box .text-box span{
+	line-height: 35px;
+}
+section.whyChooseUs{
+	background-size: cover;
+	padding-bottom: 20px
+}
+section.whyChooseUs .comment-box .text-box span:last-child{
+	padding-bottom: 20px;
+}
+section.contacts .emails-box, section.contacts h4, section.contacts p, .socials-box{
+	text-align: center;
+}
+.socials-box{
+	margin-bottom: 20px;
+}
+section.contacts .form-info-box{
+	text-align: center
+}
+.slider-wrapper{
+	height:383px;
+}
+.slider-wrapper h2{
+	margin-top: 25px;
+}
+.slider-wrapper p{
+	padding-left: 10px;
+}
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-	.resume_container .left,
-	.section_content .resume_container h3,
-	.resume_container .resume_icon {
-		text-align: left;
-		margin-bottom: 10px;
-	}
-	.resume_container .left h3 {
-		margin-top: 0;
-	}
+@media only screen and (max-width : 767px) {
+header .info-box .banner, header .info-box .social-group {
+    text-align: center;
 }
-
+header .info-box .social-group{
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+header .info-box {
+    padding: 20px 0 0 0;
+}
+header {
+    position: unset;
+}
+.img-box img{
+	max-width: 100%;
+}
+section.slider{
+	padding-top: 0;
+}
+.slider-wrapper img{
+	display: none;
+}
+.slider-wrapper .caption{
+	width: 100%;
+}
+.slider-wrapper p{
+	text-align: center;
+	padding-left: 0px;
+}
+.slide-text-box {
+    min-height: auto;
+}
+section.aboutProduct p{
+	font-size: 29px;
+}
+section.aboutProduct {
+    padding: 50px 0 50px 0;
+}
+section.channelSection {
+    padding: 30px 0 0px 0;
+}
+section.whyChooseUs .comment-box .text-box{
+	padding: 30px 20px 40px 20px;
+}
+.frame-box {
+    height: 300px;
+    width: auto;
+}
+header .menu-box .cart-box{
+	width: 100%;
+    text-align: center;
+    right: auto;
+    top: auto;
+    position: unset;
+}
+.slider-wrapper {
+    height: 440px;
+}
+}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	.top_wrapper .top_text h1 {
-		font-size: 2em;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	.main_footer {
-		text-align: left;
-	}
-	.main_footer .social_wrap {
-		float: left;
-		margin-top: 20px;
-		width: 100%;
-	}
-	.main_footer .social_wrap ul {
-		padding-left: 0;
+	.slider-wrapper h2{
+		margin-top: 30px
 	}
 }
 
@@ -50,30 +160,3 @@
 
 }
 
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
-}

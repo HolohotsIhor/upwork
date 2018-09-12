@@ -1,3 +1,176 @@
+/* *********** Header ********** */
+ol, ul {
+  margin-bottom: 0px; }
 
+body {
+  font-family: "AvenirLTLight", Helvetica, OpenSansRegular;
+  font-size: 14px; }
+
+header {
+  background-color: #f2f2f2;
+  border-top: 0px solid #869696;
+  border-bottom: 0px solid #869696;
+  z-index: 9999;
+  position: fixed;
+  width: 100%; }
+  header .info-box {
+    padding: 20px 0 30px 0; }
+    header .info-box .banner, header .info-box .social-group {
+      text-align: right; }
+    header .info-box .social-group img {
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      transition: 0.3s; }
+    header .info-box .social-group img:hover {
+      opacity: 0.6; }
+    header .info-box .help-box {
+      float: left;
+      display: inline-block; }
+      header .info-box .help-box .img-box {
+        text-align: center; }
+      header .info-box .help-box p {
+        font-size: 20px;
+        color: #869696;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100 !important;
+        text-align: center; }
+  header .menu-box {
+    background-color: #ace152;
+    border-bottom: solid 3px #e8f8fa; }
+    header .menu-box nav ul {
+      padding: 15px 0;
+      display: inline-block; }
+      header .menu-box nav ul li {
+        display: inline-block;
+        padding: 0 15px;
+        position: relative; }
+        header .menu-box nav ul li ul.inner-menu {
+          display: none;
+          position: absolute;
+          padding-top: 40px;
+          top: 0;
+          left: 0;
+          z-index: 999; }
+          header .menu-box nav ul li ul.inner-menu li {
+            text-align: center;
+            background-color: #ace152;
+            width: 100%;
+            padding-top: 10px; }
+          header .menu-box nav ul li ul.inner-menu li:first-child {
+            padding-top: 3px; }
+          header .menu-box nav ul li ul.inner-menu li:last-child {
+            padding-bottom: 3px; }
+        header .menu-box nav ul li a {
+          color: #fff;
+          text-transform: uppercase;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          transition: 0.3s; }
+        header .menu-box nav ul li a:hover {
+          color: #549093; }
+        header .menu-box nav ul li a:hover ~ ul.inner-menu {
+          display: block; }
+        header .menu-box nav ul li ul.inner-menu:hover {
+          display: block; }
+      header .menu-box nav ul li:first-child {
+        padding-left: 0; }
+
+header .menu-box nav ul li:first-child {
+  padding-left: 15px; }
+header .menu-box .cart-box {
+  float: right;
+  padding-top: 10px; }
+  header .menu-box .cart-box svg {
+    width: 30px;
+    color: #549093;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    transition: 0.3s; }
+  header .menu-box .cart-box svg:hover {
+    opacity: 0.8; }
+
+/* *********** Header end ********** */
+/* *********** Sections start ********** */
+section.slider {
+  padding-top: 203px; }
+
+section.aboutProduct {
+  padding: 80px 0 60px 0;
+  background-color: #6fb2ba; }
+  section.aboutProduct p {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 300; }
+
+section.channelSection {
+  padding: 70px 0 40px 0; }
+  section.channelSection .player-box {
+    margin: 0 auto; }
+
+section.whyChooseUs {
+  padding: 40px 0 30px 0;
+  background: url(../img/section_bg.jpg) no-repeat 0 0;
+  text-align: center; }
+  section.whyChooseUs h2 {
+    font-size: 36px;
+    color: #F2F2F2;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 500;
+    margin-bottom: 40px; }
+  section.whyChooseUs .comment-box {
+    text-align: center; }
+    section.whyChooseUs .comment-box .text-box {
+      background-color: #c0dfe2;
+      min-height: 450px;
+      color: #3A6AB9;
+      padding: 50px 20px 40px 20px; }
+      section.whyChooseUs .comment-box .text-box p {
+        color: #3A6AB9;
+        font-family: "Roboto", sans-serif;
+        font-weight: 200;
+        padding: 0 20px;
+        font-size: 21px;
+        font-style: italic;
+        line-height: 30px; }
+      section.whyChooseUs .comment-box .text-box h3 {
+        color: #3A6AB9;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 30px; }
+      section.whyChooseUs .comment-box .text-box .authoName {
+        margin-top: 30px;
+        font-size: 16px;
+        margin-bottom: 0; }
+      section.whyChooseUs .comment-box .text-box span {
+        font-size: 120px;
+        line-height: 0px;
+        display: block;
+        margin-top: -30px; }
+  section.whyChooseUs a {
+    display: inline-block;
+    margin: 30px auto 0px auto;
+    color: #3A6AB9;
+    background-color: #c0dfe2;
+    border-radius: 20px;
+    padding: 10px 35px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    transition: 0.3s; }
+  section.whyChooseUs a:hover {
+    color: #C3D32D;
+    background-color: #fff; }
+
+/* *********** Sections end ********** */
 
 /*# sourceMappingURL=main.css.map */

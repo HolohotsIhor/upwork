@@ -13,15 +13,20 @@
     <link rel="stylesheet" href="libs/linea/styles.css" />
     <link rel="stylesheet" href="libs/carousel/style.css" />
     <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="libs/slider/style.css" type="text/css">
+    <link rel="stylesheet" href="libs/normolize/normolize.min.css" type="text/css">
     <link rel="stylesheet" href="libs/animate/animate.min.css" <link rel="stylesheet" href="css/fonts.css" />
-    <link href="libs/slider/style.css" rel="stylesheet" type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="libs/carousel/purejscarousel.css" <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/skins/tomato.css" />
     <link rel="stylesheet" href="css/media.css" />
 </head>
 
 <body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader_inner"></div>
+    </div>
     <!-- Header start-->
     <header>
         <div class="container">
@@ -29,7 +34,7 @@
                 <div class="col-lg-6 col-sm-12">
                     <div class="help-box">
                         <div class="img-box">
-                            <img src="img/7d922c_aed95fea575644789c5b7ce5ed06a5e4_mv2.webp" alt="">
+                            <img src="img/7d922c_aed95fea575644789c5b7ce5ed06a5e4_mv2.jpg" alt="">
                         </div>
                         <p>
                             Online Suncare Advisors & Official Distributors of
@@ -37,14 +42,14 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-12 banner">
-                    <img src="img/7d922c_aad6ca39209c4b0bbd11e373f22ff01f_mv2.webp" alt="banner">
+                <div class="col-lg-4 col-sm-6 banner">
+                    <img src="img/7d922c_aad6ca39209c4b0bbd11e373f22ff01f_mv2.png" alt="banner">
                 </div>
-                <div class="col-lg-2 col-sm-12 social-group">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="img/social-icons/0fdef751204647a3bbd7eaa2827ed4f9.webp" alt="facebook"></a>
-                    <a href="https://twitter.com/" target="_blank"><img src="img/social-icons/c7d035ba85f6486680c2facedecdcf4d.webp" alt="twitter"></a>
-                    <a href="https://www.instagram.com/suncarecentralofficial/" target="_blank"><img src="img/social-icons/01c3aff52f2a4dffa526d7a9843d46ea.webp" alt="instagram"></a>
-                    <a href="https://www.youtube.com/" target="_blank"><img src="img/social-icons/78aa2057f0cb42fbbaffcbc36280a64a.webp" alt="youtube"></a>
+                <div class="col-lg-2 col-sm-6 social-group">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="img/social-icons/0fdef751204647a3bbd7eaa2827ed4f9.png" alt="facebook"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="img/social-icons/c7d035ba85f6486680c2facedecdcf4d.png" alt="twitter"></a>
+                    <a href="https://www.instagram.com/suncarecentralofficial/" target="_blank"><img src="img/social-icons/01c3aff52f2a4dffa526d7a9843d46ea.png" alt="instagram"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="img/social-icons/78aa2057f0cb42fbbaffcbc36280a64a.png" alt="youtube"></a>
                 </div>
             </div>
         </div>
@@ -52,23 +57,47 @@
             <div class="container">
                 <div class="row">
                     <nav class="col-md-12">
-                        <ul>
+                        <!-- Burger -->
+                        <button class="toggle_mnu">
+                            <span class="sandwich">
+						<span class="sw-topper"></span>
+                            <span class="sw-bottom"></span>
+                            <span class="sw-footer"></span>
+                            </span>
+                        </button>
+                        <nav class="top_mnu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="https://tenesommer.wixsite.com/website-6/about-us">About</a></li>
+                                <li><a href="https://tenesommer.wixsite.com/website-6/shop">Shop</a></li>
+                                <li><a href="https://tenesommer.wixsite.com/website-6/faq-s">FAQ's</a></li>
+                                <li><a href="https://tenesommer.wixsite.com/website-6/suncare-advisors">Suncare advisors</a></li>
+                                <li><a href="https://tenesommer.wixsite.com/website-6/distributors">Distributors</a></li>
+                                <li><a href="https://tenesommer.wixsite.com/website-6/destinations">Destinations</a></li>
+                                <li><a href="https://tenesommer.wixsite.com/website-6/careers">Careers</a></li>
+                                <li><a href="https://tenesommer.wixsite.com/website-6/testimonials">Testimonials</a></li>
+                                <li><a href="https://tenesommer.wixsite.com/website-6/blog">Blog</a></li>
+                                <li><a href="https://tenesommer.wixsite.com/website-6/contact-us">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <!-- Burger end-->
+                        <ul class="descktop_mnu">
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">FAQ's</a></li>
-                            <li><a href="#">Suncare advisors</a>
+                            <li><a href="https://tenesommer.wixsite.com/website-6/about-us">About</a></li>
+                            <li><a href="https://tenesommer.wixsite.com/website-6/shop">Shop</a></li>
+                            <li><a href="https://tenesommer.wixsite.com/website-6/faq-s">FAQ's</a></li>
+                            <li><a href="https://tenesommer.wixsite.com/website-6/suncare-advisors">Suncare advisors</a>
                                 <ul class="inner-menu">
                                     <div class="layer-box">
-                                        <li><a href="#">Distributors</a></li>
-                                        <li><a href="#">Destinations</a></li>
-                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="https://tenesommer.wixsite.com/website-6/distributors">Distributors</a></li>
+                                        <li><a href="https://tenesommer.wixsite.com/website-6/destinations">Destinations</a></li>
+                                        <li><a href="https://tenesommer.wixsite.com/website-6/careers">Careers</a></li>
                                     </div>
                                 </ul>
                             </li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="https://tenesommer.wixsite.com/website-6/testimonials">Testimonials</a></li>
+                            <li><a href="https://tenesommer.wixsite.com/website-6/blog">Blog</a></li>
+                            <li><a href="https://tenesommer.wixsite.com/website-6/contact-us">Contact</a></li>
                         </ul>
                         <div class="cart-box">
                             <a href="#">
@@ -167,63 +196,82 @@
             <div class="row">
                 <div class="col-md-10 cold-sm-12 col-xs-12 col-md-offset-1">
                     <div class="channel-info-box">
-                        <h3>My Channel</h3> .
+                        <h3>My Channel</h3>
                     </div>
                     <!-- Carousel start -->
                     <div class="kai_banner_container clearfix">
                         <div class="kai_banner_body clearfix">
                             <a href="">
-                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                <div class="frame-box">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                </div>
                             </a>
                             <a href="">
-                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                <div class="frame-box">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3f7Eayh50aE?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                </div>
                             </a>
                             <a href="">
-                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                <div class="frame-box">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pl5_LrQLA3Y?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                </div>
                             </a>
                             <a href="">
-                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                <div class="frame-box">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/I4QlDHnjvOQ?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                </div>
                             </a>
                             <a href="">
-                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                <div class="frame-box">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Pv0C9fVFBNA?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                </div>
                             </a>
                             <a href="">
-                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                <div class="frame-box">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zIRydqJBmdg?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                </div>
                             </a>
                             <a href="">
-                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                <div class="frame-box">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MB0D1kiJsHU?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                </div>
                             </a>
                             <a href="">
-                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                <div class="frame-box">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2b3OX9ZK8oc?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                </div>
                             </a>
                             <a href="">
-                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                <div class="frame-box">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DpIUAn9oeRk?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                </div>
                             </a>
                             <a href="">
-                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-                            </a>
-                            <a href="">
-                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-                            </a>
-                            <a href="">
-                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-                            </a>
-                            <a href="">
-                                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fiEH7FclB1U?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                <div class="frame-box">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xORF0qs7yFs?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                </div>
                             </a>
                         </div>
+                        <div class="infinite-carousel">
+                            <div class="carousel-viewport">
+                                <div class="kai_banner_bottombtns">
+                                    <span class="highlight slide slide-current" style='background-image:url(img/carousel/courusel1.jpg)'></span>
+                                    <span class="slide" style='background-image:url(img/carousel/courusel2.jpg)'></span>
+                                    <span class="slide" style='background-image:url(img/carousel/courusel3.jpg)'></span>
+                                    <span class="slide" style='background-image:url(img/carousel/courusel4.jpg)'></span>
+                                    <span class="slide" style='background-image:url(img/carousel/courusel5.jpg)'></span>
+                                    <span class="slide" style='background-image:url(img/carousel/courusel6.jpg)'></span>
+                                    <span class="slide" style='background-image:url(img/carousel/courusel7.jpg)'></span>
+                                    <span class="slide" style='background-image:url(img/carousel/courusel8.jpg)'></span>
+                                    <span class="slide" style='background-image:url(img/carousel/courusel9.jpg)'></span>
+                                    <span class="slide" style='background-image:url(img/carousel/courusel10.jpg)'></span>
+                                </div>
+                            </div>
+                            <!--.carousel-viewport-->
+                            <a class="carousel-control-previous"><i class="fa fa-arrow-left"></i></a>
+                            <a class="carousel-control-next"><i class="fa fa-arrow-right"></i></a>
+                        </div>
                         <div class="kai_banner_bottombtns">
-                            <span class="highlight" style='background-image:url(img/slider/slide1.jpg)'></span>
-                            <span style='background-image:url(img/slider/slide1.jpg)'></span>
-                            <span style='background-image:url(img/slider/slide2.jpg)'></span>
-                            <span style='background-image:url(img/slider/slide3.jpg)'></span>
-                            <span style='background-image:url(img/slider/slide4.jpg)'></span>
-                            <span style='background-image:url(img/slider/slide1.jpg)'></span>
-                            <span style='background-image:url(img/slider/slide2.jpg)'></span>
-                            <span style='background-image:url(img/slider/slide3.jpg)'></span>
-                            <span style='background-image:url(img/slider/slide4.jpg)'></span>
-                            <span style='background-image:url(img/slider/slide1.jpg)'></span>
-                            <span style='background-image:url(img/slider/slide2.jpg)'></span>
                         </div>
                         <div class="kai_banner_prevbtn side_btn"></div>
                         <div class="kai_banner_nextbtn side_btn"></div>
@@ -234,6 +282,7 @@
         </div>
     </section>
     <!-- Channel section end -->
+    <!-- Comments section start -->
     <section id="whyChooseUs" class="whyChooseUs">
         <div class="container">
             <h2>WHY PEOPLE LOVE <br> NATURAL TONE ORGANIC COLLECTION:</h2>
@@ -263,11 +312,66 @@
                     </div>
                 </div>
                 <div class="url-box">
-                	<a href="#">READ MORE TESTIMONIALS</a>	
+                    <a href="#">READ MORE TESTIMONIALS</a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Comments section end -->
+    <!-- Contacts section start -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="emails-box">
+                        <h4>Contact Emails</h4>
+                        <p>UK:<a href="mailto:onlineorders@suncarecentral.com">onlineorders@suncarecentral.com</a></p>
+                        <p>UK:<a href="mailto:onlineorders.eu@suncarecentral.com">onlineorders.eu@suncarecentral.com</a></p>
+                        <p>UK:<a href="mailto:mcoadmin@suncarecentral.com">mcoadmin@suncarecentral.com</a></p>
+                    </div>
+                    <div class="phones-box">
+                        <h4>Contact Phone Numbers</h4>
+                        <p>UK:+44 (0) 844 598 3610</p>
+                        <p>EU:+34 902 367 416</p>
+                        <p>US:+1 407 363 2810</p>
+                    </div>
+                    <div class="socials-box">
+                        <h4>Sitemap?</h4>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="img/social-icons/0fdef751204647a3bbd7eaa2827ed4f9.png" alt="facebook"></a>
+                        <a href="https://twitter.com/" target="_blank"><img src="img/social-icons/c7d035ba85f6486680c2facedecdcf4d.png" alt="twitter"></a>
+                        <a href="https://www.instagram.com/suncarecentralofficial/" target="_blank"><img src="img/social-icons/01c3aff52f2a4dffa526d7a9843d46ea.png" alt="instagram"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="img/social-icons/78aa2057f0cb42fbbaffcbc36280a64a.png" alt="youtube"></a>
+                    </div>
+                </div>
+                <div class="col-md-7 col-xs-12">
+                    <form action="http://formspree.io/onlineorders@suncarecentral.com" class="main_form" novalidate target="_blank" method="post">
+                        <label class="form-group">
+                            <div class="label-box">
+                                Join our mailing list
+                                <br> Never miss an update
+                            </div>
+                            <input type="email" name="email" placeholder="Email adress" data-validation-required-message="E-mail not entered correctly" required />
+                            <span class="help-block text-danger"></span>
+                        </label>
+                        <button>Subscribe Now</button>
+                    </form>
+                    <div class="form-info-box">
+                        We’d love to send you exclusive offers and the latest information from Suncare Central by email, post and other electronic means. We’ll always treat your personal details with the upmost care and will never share them with other companies for marketing purposes. See our <a href="#">terms and conditions</a> for more information on how we take care of your information.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contacts section end -->
+    <!-- Footer start-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                ©2018 BY JAS
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end-->
     <!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -283,6 +387,7 @@
     <script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
     <!-- Mivue carousel start-->
     <script type="text/javascript" src="libs/carousel/jquery.kaibanner.js"></script>
+    <script type="text/javascript" src="libs/carousel/purejscarousel.js"></script>
     <!-- Mivue carousel end-->
     <script src="libs/slider/script.js"></script>
     <script src="js/common.js"></script>
