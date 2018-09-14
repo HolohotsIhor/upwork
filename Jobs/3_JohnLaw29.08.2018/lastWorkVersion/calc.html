@@ -2,14 +2,15 @@
 <html>
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125510862-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-125510862-1');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125510862-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-125510862-1');
+    </script>
     <meta charset="utf-8" />
     <title>Fluz Club</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,6 +25,7 @@
     <!-- **************Libs******************* -->
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/skins/tomato.css" />
+    <link rel="stylesheet" href="libs/calculator/style.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -283,6 +285,53 @@
             </div>
         </div>
     </section>
+    <section id="calc" class="calc">
+        <div class="container">
+            <div class="row">
+                <h2>CALCULATE EXPECTED CASH BACK</h2>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <!-- Calculator start -->
+                    <div class="calculator__wrapper" id="calculator">
+                        <div class="calculator__sliders" id="calculator-home">
+                            <p class="calculator__heading">Number of downstream fluzzers</p>
+                            <div class="calculator__slider">
+                                <div class="calculator__range noUi-target noUi-ltr noUi-horizontal" id="calculator__slider--downstream">
+                                </div>
+                                <input class="calculator__field" type="number" value="">
+                            </div>
+                            <p class="calculator__heading">Average spending from your network (monthly)</p>
+                            <div class="calculator__slider">
+                                <div class="calculator__range noUi-target noUi-ltr noUi-horizontal" id="calculator__slider--fluzzer">
+                                </div>
+                                <input class="calculator__field" type="number" value="">
+                            </div>
+                            <p class="calculator__heading">Average personal spending (monthly)</p>
+                            <div class="calculator__slider">
+                                <div class="calculator__range noUi-target noUi-ltr noUi-horizontal" id="calculator__slider--personal">
+                                </div>
+                                <input class="calculator__field" type="number" value="">
+                            </div>
+                        </div>
+                        <div class="calculator__result">
+                            <p class="calculator__result__heading">Estimated monthly income:</p>
+                            <p id="result-income" class="calculator__result__income">$311,11</p>
+                            <br>
+                            <p class="calculator__result__heading">Versus other cash back apps:</p>
+                            <p id="result-income-other" class="calculator__result__income">$9</p>
+                            <p class="calculator__result__note">*this calculator shows an estimate based on an expectation for a Fluzzer's average consumption in each spending category at the time of writing, it is not a guarantee of any kind. The actual cash back you receive may vary from the estimate based on the categories you and the Fluzzers in your network actually spend on. For example, restaurants might yield a higher cash back than rideshares. The income your earn from other cash back apps might also differ from the estimate provided.</p>
+                        </div>
+                    </div>
+                    <div id="cb-calculator" data-midnight="" data-column-margin="default" data-bg-mobile-hidden="" class="wpb_row vc_row-fluid vc_row standard_section    ">
+                        <div class="row-bg-wrap">
+                            <div class="row-bg   " style=""></div>
+                        </div>
+                        <script src="nouislider.min.js" type="text/javascript"></script>
+                    </div>
+                    <!-- Calculator end -->
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="main_footer bg_dark">
         <div class="container">
             <div class="row">
@@ -298,7 +347,8 @@
                     <a href="https://fluzfluz.com/inv/379"><i class="fab fa-android"></i></a>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 author">
-                    <a href="mailto:info@fluzclub.com">info@fluzclub.com</a><br>
+                    <a href="mailto:info@fluzclub.com">info@fluzclub.com</a>
+                    <br>
                     <a href="privacypolicy.html">Privacy Policy</a>
                 </div>
             </div>
@@ -317,12 +367,16 @@
     <script src="libs/mixitup/mixitup.min.js"></script>
     <script src="libs/sliphover/jquery.sliphover.min.js"></script>
     <script src="libs/pageScrool2/PageScroll2id.min.js"></script>
+    <script src="libs/calculator/script.js"></script>
     <script src="libs/waypoints/waypoints.min.js"></script>
     <script src="js/common.js"></script>
     <!-- Yandex.Metrika counter -->
     <!-- /Yandex.Metrika counter -->
     <!-- Google Analytics counter -->
     <!-- /Google Analytics counter -->
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
 </body>
+
 </html>
