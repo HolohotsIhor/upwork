@@ -3,7 +3,7 @@ ol, ul {
   margin-bottom: 0px; }
 
 body {
-  font-family: "AvenirLTLight", Helvetica, OpenSansRegular;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px; }
 
 /* Loader start */
@@ -118,7 +118,7 @@ svg path {
     padding: 0;
     margin: 0; }
   .top_mnu ul {
-    margin-top: 100px;
+    margin-top: 30px;
     text-align: center;
     -webkit-animation-duration: 0.01s;
     -moz-animation-duration: 0.01s;
@@ -164,9 +164,61 @@ svg path {
       -moz-animation-delay: 0.9s;
       animation-delay: 0.9s; }
     .top_mnu ul li:nth-child(11) a {
+      -webkit-animation-delay: 1s;
+      -moz-animation-delay: 1s;
+      animation-delay: 1s; }
+    .top_mnu ul li:nth-child(12) a {
       -webkit-animation-delay: 1.1s;
       -moz-animation-delay: 1.1s;
       animation-delay: 1.1s; }
+    .top_mnu ul li:nth-child(13) a {
+      -webkit-animation-delay: 1.2s;
+      -moz-animation-delay: 1.2s;
+      animation-delay: 1.2s; }
+    .top_mnu ul li:nth-child(14) a {
+      -webkit-animation-delay: 1.3s;
+      -moz-animation-delay: 1.3s;
+      animation-delay: 1.3s; }
+    .top_mnu ul li:nth-child(15) a {
+      -webkit-animation-delay: 1.4s;
+      -moz-animation-delay: 1.4s;
+      animation-delay: 1.4s; }
+    .top_mnu ul li:nth-child(16) a {
+      -webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
+      animation-delay: 1.5s; }
+    .top_mnu ul li:nth-child(17) a {
+      -webkit-animation-delay: 1.6s;
+      -moz-animation-delay: 1.6s;
+      animation-delay: 1.6s; }
+    .top_mnu ul li:nth-child(18) a {
+      -webkit-animation-delay: 1.7s;
+      -moz-animation-delay: 1.7s;
+      animation-delay: 1.7s; }
+    .top_mnu ul li:nth-child(19) a {
+      -webkit-animation-delay: 1.8s;
+      -moz-animation-delay: 1.8s;
+      animation-delay: 1.8s; }
+    .top_mnu ul li:nth-child(20) a {
+      -webkit-animation-delay: 1.9s;
+      -moz-animation-delay: 1.9s;
+      animation-delay: 1.9s; }
+    .top_mnu ul li:nth-child(21) a {
+      -webkit-animation-delay: 2s;
+      -moz-animation-delay: 2s;
+      animation-delay: 2s; }
+    .top_mnu ul li:nth-child(22) a {
+      -webkit-animation-delay: 2.1s;
+      -moz-animation-delay: 2.1s;
+      animation-delay: 2.1s; }
+    .top_mnu ul li:nth-child(23) a {
+      -webkit-animation-delay: 2.2s;
+      -moz-animation-delay: 2.2s;
+      animation-delay: 2.2s; }
+    .top_mnu ul li:nth-child(24) a {
+      -webkit-animation-delay: 2.3s;
+      -moz-animation-delay: 2.3s;
+      animation-delay: 2.3s; }
     .top_mnu ul a {
       color: #fff;
       display: block;
@@ -174,12 +226,12 @@ svg path {
       font-size: 12px;
       opacity: 0;
       position: relative;
-      height: 50px;
+      height: 30px;
       outline: none; }
       .top_mnu ul a span {
         display: block;
         position: relative;
-        top: -35px;
+        top: -25px;
         left: 0;
         height: 100%;
         -webkit-transition: all 0.5s ease;
@@ -192,6 +244,28 @@ svg path {
   margin-top: 0px; }
 
 /* Burger end */
+.inner-menu.second {
+  display: none;
+  left: 10px;
+  margin-left: 191px;
+  margin-top: -35px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  transition: 0.3s; }
+
+.inner-menu.third {
+  display: none;
+  left: 10px;
+  margin-left: 191px;
+  margin-top: -40px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  transition: 0.3s; }
+
 header {
   background-color: #f2f2f2;
   border-top: 0px solid #869696;
@@ -219,7 +293,7 @@ header {
       header .info-box .help-box p {
         font-size: 20px;
         color: #869696;
-        font-family: "Roboto", sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-weight: 100 !important;
         text-align: center; }
   header .menu-box {
@@ -238,7 +312,8 @@ header {
           padding-top: 40px;
           top: 0;
           left: 0;
-          z-index: 999; }
+          z-index: 999;
+          min-width: 190px; }
           header .menu-box nav ul.descktop_mnu li ul.inner-menu li {
             text-align: center;
             background-color: #ace152;
@@ -258,12 +333,14 @@ header {
           transition: 0.3s; }
         header .menu-box nav ul.descktop_mnu li a:hover {
           color: #549093; }
-        header .menu-box nav ul.descktop_mnu li a:hover ~ ul.inner-menu {
-          display: block; }
-        header .menu-box nav ul.descktop_mnu li ul.inner-menu:hover {
-          display: block; }
       header .menu-box nav ul.descktop_mnu li:first-child {
         padding-left: 0; }
+
+header .menu-box nav ul.descktop_mnu li.hover-open:hover > ul.inner-menu {
+  display: block; }
+
+li.hover-open:hover .inner-menu {
+  display: block; }
 
 header .menu-box nav ul li:first-child {
   padding-left: 15px; }
@@ -281,6 +358,14 @@ header .menu-box .cart-box {
   header .menu-box .cart-box svg:hover {
     opacity: 0.8; }
 
+ul.inner-menu:hover {
+  display: block; }
+
+ul.inner-menu.shop .layer-box {
+  width: 280px; }
+  ul.inner-menu.shop .layer-box li:first-child {
+    padding-left: 15px; }
+
 /* *********** Header end ********** */
 /* *********** Sections start ********** */
 section.slider {
@@ -289,15 +374,15 @@ section.slider {
 section.aboutProduct {
   padding: 80px 0 60px 0;
   background-color: #6fb2ba; }
-  section.aboutProduct p {
+  section.aboutProduct h2 {
     color: #fff;
-    font-family: "Roboto", sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 32px;
     text-align: center;
     font-weight: 300; }
 
 section.channelSection {
-  padding: 70px 0 40px 0; }
+  padding: 0px 0 40px 0; }
   section.channelSection .player-box {
     margin: 0 auto; }
 
@@ -311,7 +396,8 @@ section.whyChooseUs {
     text-align: center;
     letter-spacing: 5px;
     font-weight: 500;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    font-family: "Lato", sans-serif; }
   section.whyChooseUs .comment-box {
     text-align: center; }
     section.whyChooseUs .comment-box .text-box {
@@ -321,7 +407,7 @@ section.whyChooseUs {
       padding: 50px 20px 40px 20px; }
       section.whyChooseUs .comment-box .text-box p {
         color: #3A6AB9;
-        font-family: "Roboto", sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-weight: 200;
         padding: 0 20px;
         font-size: 21px;
@@ -331,7 +417,8 @@ section.whyChooseUs {
         color: #3A6AB9;
         font-size: 18px;
         font-weight: bold;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        font-family: "Lato", sans-serif; }
       section.whyChooseUs .comment-box .text-box .authoName {
         margin-top: 30px;
         font-size: 16px;
@@ -361,7 +448,7 @@ section.contacts {
   background-color: #f2f2f2;
   padding: 30px 0; }
   section.contacts h4 {
-    color: #252F35;
+    color: #666;
     font-size: 19px;
     font-weight: 300; }
   section.contacts .emails-box {
@@ -369,13 +456,13 @@ section.contacts {
   section.contacts .phones-box {
     margin-bottom: 30px; }
   section.contacts p {
-    color: #444;
+    color: #666;
     font-size: 16px;
     line-height: 28px; }
     section.contacts p a {
       text-decoration: underline;
-      color: #444;
-      font-family: "Roboto", sans-serif; }
+      color: #666;
+      font-family: "Open Sans", sans-serif; }
   section.contacts .socials-box h4 {
     margin-bottom: 20px; }
   section.contacts form {
@@ -385,7 +472,7 @@ section.contacts {
     padding-bottom: 4px;
     margin-bottom: 30px; }
     section.contacts form .label-box {
-      color: #444;
+      color: #666;
       font-size: 16px;
       margin-bottom: 20px; }
     section.contacts form input {
@@ -395,8 +482,8 @@ section.contacts {
       padding-left: 5px;
       margin-bottom: 5px;
       background-color: #c8e4e7;
-      border: solid 1px #444;
-      color: #444; }
+      border: solid 1px #666;
+      color: #666; }
     section.contacts form button {
       width: 100%;
       height: 50px;
@@ -412,11 +499,11 @@ section.contacts {
     section.contacts form button:hover {
       opacity: 0.8; }
   section.contacts .form-info-box {
-    color: #333;
+    color: #666;
     font-size: 16px;
     line-height: 30px; }
     section.contacts .form-info-box a {
-      color: #888;
+      color: #666;
       text-decoration: underline;
       -webkit-transition: 0.3s;
       -moz-transition: 0.3s;
